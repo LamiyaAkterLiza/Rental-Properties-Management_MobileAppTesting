@@ -43,7 +43,7 @@ Rental APK,https://drive.google.com/file/d/10bVwjHrl9mQWhU83GAsrOvdMUUs_1m79/vie
 
 3.Select any property address from the list.
 
-4.Observe the selected address field.",The full property address should be clearly displayed after selection.,The selected property address is not fully visible and appears cut off,Minor,Medium,Re-test,https://drive.google.com/file/d/1UsO0BiH3sGDHx_8w4Mw0XCSsZBWfAX47/view?usp=drive_link,lamiya-QA,Spanish ee show kore
+4.Observe the selected address field.",The full property address should be clearly displayed after selection.,The selected property address is not fully visible and appears cut off,Minor,Medium,Re-test,https://drive.google.com/file/d/1UsO0BiH3sGDHx_8w4Mw0XCSsZBWfAX47/view?usp=drive_link,lamiya-QA
 ,,Bug-06,No Admin Popup Notification After Submitting Fine Payment,"When submits a fine payment from the Unpaid Fines section, the system shows a “Submitted” success message. However, no popup notification appears in the Admin Panel to notify the admin about the submitted fine payment.","1.Log in Rental Properties Management apk
 
 2. Click My Fines.
