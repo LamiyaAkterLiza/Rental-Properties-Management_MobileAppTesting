@@ -1,0 +1,84 @@
+Project Name,Project Link,Bug ID,Bug Title,Description,Steps to Reproduce,Expected Result,Actual Result,Severity,Priority,Status,Attachment,Reported By,
+Rental APK,https://drive.google.com/file/d/10bVwjHrl9mQWhU83GAsrOvdMUUs_1m79/view?usp=sharing,Bug-01,Negative Amount Accepted in Upload Proof Form Without Validation,"In the Upload Proof form after clicking Pay Now, the system allows to enter a negative value in the amount field (e.g., -23232) and successfully submit the form without showing any validation error message. This can lead to incorrect payment records and should be restricted.","1.Log in Rental Properties Management apk
+
+2.Click on Pay Now.
+
+3.Click Upload Proof.
+
+4.In the Amount field, enter a negative value (e.g., -23232).
+
+5.Click Submit.",The system should not accept negative values in the amount field and should display a validation error message such as “Enter valid amount.”,The system accepts the negative value and successfully submits the form without showing any error message.,Critical,High,Re-test,https://drive.google.com/file/d/1WUCtXS48gvE7wJPFP_bIeqyn-sjauqr1/view?usp=drive_link,lamiya-QA,
+,,Bug-02,Uploaded File in Upload Proof Section Appears in Other Forms,"When uploads a file in the Upload Proof section, the same file is automatically displayed in other forms as well. Each form should manage its uploaded files independently, but the system is showing the same uploaded file across multiple forms, which may confuse users and lead to incorrect submissions.","1.log in Rental Properties Management apk
+
+2. Click on Pay now
+
+3. Click Upload Proof.
+
+4. Select and upload a file.
+
+5. Navigate to another form that also has a file upload option.
+
+6.Observe the uploaded file preview.","Each form should handle file uploads independently, and the uploaded file should appear only in the form where it was uploaded.",The uploaded file from the Upload Proof section is also displayed in other forms automatically.,Major,High,Re-test,https://drive.google.com/file/d/1uvTx2wUufO0ReOdTWCcK2inw7UR43dua/view?usp=drive_link,lamiya-QA,
+,,Bug-03,No Error Message Displayed When Invalid Amount in Upload Proof Form,"In the Upload Proof form, when enters an invalid/garbage value in the Amount field (e.g., 34-66676) and clicks the Submit button, the form does not submit. However, the system does not display any validation error message. This creates confusion because the user does not understand why the form submission failed.","1.Log in Rental Properties Management apk
+
+2.Click on Pay Now.
+
+3.Click Upload Proof.
+
+4.In the Amount field, enter a large value (e.g., 34-66676).
+
+5.Click Submit.",The system should display a validation error message such as “Please enter a valid amount.” ,"The form does not submit, but no validation error message is displayed.",Major,High,Re-test,https://drive.google.com/file/d/1KtzUFDUTQLjCxNuhNwUVcgiS5jaAaVNW/view?usp=drive_link,lamiya-QA,
+,,Bug-04,Unclear Error Message When Entering Invalid Amount in Upload Proof Form,"In the Upload Proof form, when a user enters an excessively large or invalid value in the Amount field (e.g., 345345365654656557567666676) and clicks the Submit button, the system displays the error message “Failed to create new request.” This message is unclear and does not explain the actual issue with the amount field, which may confuse users.","1.Log in Rental Properties Management apk
+
+2.Click on Pay Now.
+
+3.Click Upload Proof.
+
+4.In the Amount field, enter a large value (e.g., 345345365654656557567666676).
+
+5.Click Submit.",The system should show a clear validation message such as “Please enter a valid amount.” or “Amount value is too large.”,"The system shows a generic error message “Failed to create new request.”, which does not clearly indicate the problem with the amount field.",Major,High,Re-test,https://drive.google.com/file/d/1tD17LJfLUaQjsx2lr4htmldYXSBihJKB/view?usp=drive_link,lamiya-QA,
+,,Bug-05,Selected Property Address Not Fully Visible in “Submit Your Maintenance” Section,"In the “Submit Your Maintenance” section, when selects a property address from the dropdown, the full address is not displayed properly. The address appears partially visible, which makes it difficult for users to clearly identify the selected property.","1.Go to the ""Submit Your Maintenance"" form section.
+
+2.Click on the Property Address dropdown.
+
+3.Select any property address from the list.
+
+4.Observe the selected address field.",The full property address should be clearly displayed after selection.,The selected property address is not fully visible and appears cut off,Minor,Medium,Re-test,https://drive.google.com/file/d/1UsO0BiH3sGDHx_8w4Mw0XCSsZBWfAX47/view?usp=drive_link,lamiya-QA,Spanish ee show kore
+,,Bug-06,No Admin Popup Notification After Submitting Fine Payment,"When submits a fine payment from the Unpaid Fines section, the system shows a “Submitted” success message. However, no popup notification appears in the Admin Panel to notify the admin about the submitted fine payment.","1.Log in Rental Properties Management apk
+
+2. Click My Fines.
+
+3. Click on Unpaid Fines.
+
+4. Select one fine.
+
+5. Click Submit Fine.
+
+6. attach payment information
+
+7. Click Submit.","After submitting the fine payment, a popup notification should appear in the Admin Panel informing the admin about the new submission.","The system shows a “Submitted successfully” message to the user apk, but no popup notification appears in the Admin Panel.",Major,High,New,,lamiya-QA,
+,,Bug-07,No Maximum File Upload Limit Across the Application,"Across multiple sections of the application where file uploads are required (e.g., Upload Proof, Submit Fine, Maintenance Submission, etc.), the system specifies a minimum file requirement but does not define or restrict the maximum number of files that can be uploaded. As a result, users may upload an unlimited number of files, which could lead to performance issues and excessive storage usage.","1. Log in Rental Properties Management apk
+
+2. Go to any section of the application where file upload is required.
+
+3. Check the file upload requirements.
+
+4. Try uploading multiple files.
+
+5. Observe the upload behavior.","The system should clearly define and enforce a maximum file upload limit (e.g., Maximum 3 or 5 files).",There is no maximum file upload limit specified or enforced across the application.,Critical,High,Re-test,https://drive.google.com/file/d/12KPVXmTEuzlzNYjqNu9Wd2H76673YQBZ/view?usp=drive_link,lamiya-QA,
+,,Bug-08,Submit Button Not Visible When Multiple Files Are Uploaded in Submit Fine Form,"In the Submit Fine form, when uploads multiple files in the Attach Payment Information section, the uploaded files expand the layout and push the bottom part of the form downward. As a result, the Submit button becomes hidden and cannot be accessed. Additionally, the UI shows a “Bottom overflowed by 112 pixels” error, indicating a layout overflow issue.","1.Log in Rental Properties Management apk
+
+2. Click My Fines.
+
+3. Select Unpaid Fines.
+
+4. Click Submit Fine.
+
+5. Upload multiple files in the Attach Payment Information section.
+
+6. Scroll down and observe the bottom of the form.","The form layout should adjust properly when multiple files are uploaded, and the Submit button should remain visible and accessible.","When multiple files are uploaded, the layout overflows and the Submit button is not visible, making it difficult or impossible for users to submit the form. Additionally, a “Bottom overflowed by 112 pixels” UI error appears.",Major,High,Re-test,https://drive.google.com/file/d/1fqLMsMNPLQgKDgVEH61y7jS8kFHcXUHh/view?usp=drive_link,lamiya-QA,
+,,Bug-09,Incorrect Area Unit Displayed in Spanish Language,"When the language is set to Spanish, the property area is displayed as “Pies²” (square feet) instead of “m² (square meters)”. The unit should follow the correct format for the Spanish version.","1.Log in Rental Properties Management apk
+
+2. Click view details
+
+3. observe the details",The property area should be displayed as 1550.0 m² (square meters) when the Spanish language is selected.,The property area is currently displayed as 1550.0 Pies²,Minor,High,New,https://drive.google.com/file/d/1lDLDbCAM4p9zvCn9WH9earR-x6TDITjm/view?usp=drive_link,lamiya-QA,
