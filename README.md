@@ -91,22 +91,6 @@ Includes issues such as:
 
 ---
 
-## 🧪 Bug Report Structure
-
-Each bug report includes:
-
-* **Bug ID**
-* **Title**
-* **Description**
-* **Steps to Reproduce**
-* **Expected Result**
-* **Actual Result**
-* **Severity & Priority**
-* **Status (QA / DEV)**
-* **Attachments (Screenshots / Videos)**
-
----
-
 ## 📁 Repository Structure
 
 ```
