@@ -1,4 +1,4 @@
-# Rental Properties Management – Bug Reports
+🏠 Rental Properties Management 
 
 ## 📌 Project Overview
 
