@@ -138,8 +138,7 @@ All supporting files (screenshots, videos, documents) are attached via Google Dr
 
 ## 👤 Reported By
 
-**QA Team**
-Lamiya – QA Engineer
+**Lamiya**– QA Engineer
 
 ---
 
